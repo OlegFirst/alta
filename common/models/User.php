@@ -13,44 +13,35 @@ use yii\web\IdentityInterface;
  *
  * @property integer $id
  * @property string $username
- * @property string $password_hash
- * @property string $password_reset_token
- * @property string $verification_token
+ * @property string $phone
  * @property string $email
- * @property string $auth_key
- * @property integer $status
- * @property integer $created_at
- * @property integer $updated_at
- * @property string $password write-only password
+ * @property string $password
+ * @property string $is_legal_entity
+ * @property string $company_name
+ * @property string $company_type_id
+ * @property string $company_info
  */
+ 
 class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
-    const STATUS_INACTIVE = 9;
+    const STATUS_INACTIVE = 10; // Temporary value! While registration email sending doesnt work
+		// const STATUS_INACTIVE = 9;
     const STATUS_ACTIVE = 10;
 
 
-    /**
-     * {@inheritdoc}
-     */
     public static function tableName()
     {
         return '{{%user}}';
     }
-
-    /**
-     * {@inheritdoc}
-     */
+    
     public function behaviors()
     {
         return [
             TimestampBehavior::class,
         ];
     }
-
-    /**
-     * {@inheritdoc}
-     */
+    
     public function rules()
     {
         return [
@@ -84,6 +75,11 @@ class User extends ActiveRecord implements IdentityInterface
     public static function findByUsername($username)
     {
         return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
+    }
+		
+		public static function findByEmail($email)
+    {
+        return static::findOne(['email' => $email, 'status' => self::STATUS_ACTIVE]);
     }
 
     /**

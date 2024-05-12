@@ -4,11 +4,21 @@
 	/** @var string $content */
 
 	use common\widgets\Alert;
-	use frontend\widgets\Header;
 	use frontend\assets\AppAsset;
+	use frontend\widgets\Header;
+	use frontend\widgets\Signup;
+	use frontend\widgets\Signin;
+	use frontend\widgets\FlashMessage;
+	use frontend\widgets\Footer;
+	
 	use yii\bootstrap5\Html;
 
 	AppAsset::register($this);
+	
+	$this->registerCsrfMetaTags();
+	$this->registerMetaTag(['charset' => Yii::$app->charset], 'charset');
+	$this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no']);
+	$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.ico')]);
 ?>
 
 <?php $this->beginPage() ?>
@@ -19,16 +29,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<?php $this->registerCsrfMetaTags() ?>
 		<title><?= Html::encode($this->title) ?></title>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 		<?php $this->head() ?>
 	</head>
-	<body class="d-flex flex-column h-100">
+	<body>
 	<?php $this->beginBody() ?>
 	
 	<?= Header::widget() ?>
+	
+	<?= Signup::widget() ?>
+	
+	<?= Signin::widget() ?>
 
 	<main>
 		<?= $content ?>
 	</main>
+	
+	<?= FlashMessage::widget() ?>
+	
+	<?= Footer::widget() ?>
 
 	<?php $this->endBody() ?>
 	</body>

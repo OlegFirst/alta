@@ -37,14 +37,17 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
+            // 'enablePrettyUrl' => true,
+            // 'showScriptName' => false,
+						'rules' => [
+								// 'one' => 'site/one',
+								// '<script>' => 'site/<script>'
             ],
-        ],
-        */
+				],
+				'menu' => [
+						'class' => 'app\components\Menu'
+				],
     ],
     'params' => $params,
 ];

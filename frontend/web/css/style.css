@@ -774,11 +774,9 @@ strong{
     margin-top: 32px;
 }
 
-
-
-
-
-
+main {
+	width: 100%;
+}
 
 .main-slider_block{
     width: 100%;
@@ -4712,8 +4710,6 @@ strong{
     width: 50%;
 }
 
-
-
 .modal-login .modal-block{
     margin: 24px auto;
     padding: 24px;
@@ -4737,6 +4733,14 @@ strong{
     padding-bottom: 24px;
     border-bottom: 1px solid #F79E1B;
     margin-bottom: 24px;
+}
+.modal-login__sign-in {
+	position: relative;
+	color: #12203A;
+	top: 22px;
+	left: -128px;
+	text-decoration: underline;
+	font-size: 14px;
 }
 
 .modal-login__form{
@@ -4801,33 +4805,34 @@ strong{
     position: relative;
 }
 .modal-login__form-checkbox input{
-    display: none;
+    /* display: none; */
+		accent-color: desired-color;
 }
 .modal-login__form-checkbox label{
-    position: relative;
-    padding-left: 28px;
+    /* position: relative; */
+		/* padding-left: 28px; */
     cursor: pointer;
 }
-.modal-login__form-checkbox label:before{
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: url('../img/modal-login__form-checkbox.svg') center center no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 1px;
-    position: absolute;
-    top: 2px;
-    left: 0;
-    transition: .5s all;
-}
-.modal-login__form-checkbox input:checked + label:before{
-    background: url('../img/modal-login__form-checkbox-true.svg') center center no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
-}
+/* .modal-login__form-checkbox label:before{ */
+    /* content: ''; */
+    /* width: 20px; */
+    /* height: 20px; */
+    /* background: url('../img/modal-login__form-checkbox.svg') center center no-repeat; */
+    /* -webkit-background-size: contain; */
+    /* background-size: contain; */
+    /* -webkit-border-radius: 1px; */
+    /* -moz-border-radius: 1px; */
+    /* border-radius: 1px; */
+    /* position: absolute; */
+    /* top: 2px; */
+    /* left: 0; */
+    /* transition: .5s all; */
+/* } */
+/* .modal-login__form-checkbox input:checked + label:before{ */
+    /* background: url('../img/modal-login__form-checkbox-true.svg') center center no-repeat; */
+    /* -webkit-background-size: contain; */
+    /* background-size: contain; */
+/* } */
 
 .modal-login__form-legal{
     display: none;
@@ -5545,4 +5550,42 @@ strong{
     color: #fff;
     font-weight: 700;
     display: inline-block;
+}
+
+.invalid-feedback {
+	color: red;
+	font-size: 12px;
+}
+
+.flash-message {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	border-radius: 4px;
+	animation-name: flash-message_hide;
+	animation-delay: 8s;
+	animation-fill-mode: forwards;
+}
+.flash-message__content {
+	background-color: #FFFFFF;
+	padding: 20px;
+}
+@keyframes flash-message_hide {
+	from: {
+		display: flex;
+	}
+	
+	to {
+			visibility: hidden;
+	}
+}
+
+.header__sign-up_hide {
+	display: none;
 }

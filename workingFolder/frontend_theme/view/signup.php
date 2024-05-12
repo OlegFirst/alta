@@ -32,4 +32,28 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php ActiveForm::end(); ?>
         </div>
     </div>
+		
+		
 </div>
+
+<input type="text" class="modal-login__form-input" placeholder="ПІБ">
+                    <input type="tel" class="modal-login__form-input" placeholder="Номер телефону">
+                    <input type="email" class="modal-login__form-input" placeholder="Email">
+
+
+                    <div class="modal-login__form-checkbox">
+                        <input type="checkbox" id="checkbox-legal" onchange="handleCheckboxChange()">
+                        <label for="checkbox-legal">
+                            Юридична особа
+                        </label>
+                    </div>
+
+                    <div class="modal-login__form-legal" id="modal-login__form-legal">
+                        <input type="text" class="modal-login__form-input" placeholder="Назва компанії">
+                        <select name="" id="" class="modal-login__form-select">
+                            <option value="" disabled selected>Тип компанії</option>
+                            <option value="">Тип компанії 1</option>
+                            <option value="">Тип компанії 2</option>
+                        </select>
+                        <input type="text" class="modal-login__form-input" placeholder="ЄДРПОУ">
+                    </div>

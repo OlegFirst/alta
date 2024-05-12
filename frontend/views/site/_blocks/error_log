@@ -1,0 +1,4 @@
+[26-Mar-2024 10:49:57 Europe/Helsinki] PHP Notice:  Undefined variable: item in /home/grnweswb/mir-test1.klev.net.ua/alta_metiz/_blocks/s-catalog__block.php on line 3
+[26-Mar-2024 10:49:57 Europe/Helsinki] PHP Notice:  Trying to access array offset on value of type null in /home/grnweswb/mir-test1.klev.net.ua/alta_metiz/_blocks/s-catalog__block.php on line 3
+[26-Mar-2024 10:49:57 Europe/Helsinki] PHP Notice:  Undefined variable: item in /home/grnweswb/mir-test1.klev.net.ua/alta_metiz/_blocks/s-catalog__block.php on line 5
+[26-Mar-2024 10:49:57 Europe/Helsinki] PHP Notice:  Trying to access array offset on value of type null in /home/grnweswb/mir-test1.klev.net.ua/alta_metiz/_blocks/s-catalog__block.php on line 5

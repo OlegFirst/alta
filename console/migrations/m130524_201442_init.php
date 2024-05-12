@@ -13,16 +13,21 @@ class m130524_201442_init extends Migration
         }
 
         $this->createTable('{{%user}}', [
-            'id' => $this->primaryKey(),
-            'username' => $this->string()->notNull()->unique(),
-            'auth_key' => $this->string(32)->notNull(),
-            'password_hash' => $this->string()->notNull(),
-            'password_reset_token' => $this->string()->unique(),
-            'email' => $this->string()->notNull()->unique(),
-
-            'status' => $this->smallInteger()->notNull()->defaultValue(10),
-            'created_at' => $this->integer()->notNull(),
-            'updated_at' => $this->integer()->notNull(),
+            'id' => $this->primaryKey(255),
+            'username' => $this->string(255)->notNull(),
+						'auth_key' => $this->string(32)->notNull()->unique(),						
+						'password_hash' => $this->string(255)->notNull(),
+						'password_reset_token' => $this->string(255),
+						'email' => $this->string(255)->notNull(),
+						'role' => $this->smallInteger(6)->defaultValue(10),
+						'status' => $this->smallInteger(6)->defaultValue(10),
+						'created_at' => $this->integer(11)->notNull(),
+						'updated_at' => $this->integer(11)->notNull(),
+						'phone' => $this->string(255)->notNull(),
+						'is_legal_entity' => $this->tinyInteger(1)->defaultValue(0),
+						'company_name' => $this->string(255),
+						'company_type_id' => $this->integer(10),
+						'company_info' => $this->string(255)
         ], $tableOptions);
     }
 

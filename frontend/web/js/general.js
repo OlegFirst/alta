@@ -1,3 +1,9 @@
+const authenticationStatus = {
+	'CLEAR': 'CLEAR',
+	'SIGN_UP': 'SIGN_UP',
+	'SIGN_IN': 'SIGN_IN'
+};
+
 let lastScrollPosition = 0;
 function updateScroll() {
     let header = document.getElementById('header');
@@ -13,14 +19,12 @@ function updateScroll() {
 }
 window.addEventListener('scroll', updateScroll);
 
-
 document.querySelectorAll(".js_catalogToggle").forEach(button => {
     button.addEventListener("click", event => {
         event.preventDefault();
         catalogToggle();
     });
 });
-
 
 function checkCatalogActive() {
     return document.getElementById('header-catalog').classList.contains("active");
@@ -73,11 +77,6 @@ function updateResize() {
 
 }
 window.addEventListener('resize', updateResize);
-
-
-
-
-
 
 let btnSubMenu = document.getElementById('page1_title');
 btnSubMenu.addEventListener('click', function (event) {
@@ -132,11 +131,6 @@ catalogTitles.forEach(function(title) {
     });
 });
 
-
-
-
-
-
 /* FAQ */
 const faqContainers = document.querySelectorAll('.faq');
 faqContainers.forEach(faqContainer => {
@@ -187,9 +181,7 @@ function faqHeight(faqBlock) {
     textWrap.style.height = text.clientHeight + 'px';
 }
 
-
 /* FAQ --- end */
-
 
 /*  js-more  */
 let jsMoreWrap = document.querySelectorAll('.js-more__wrap');
@@ -275,7 +267,6 @@ function filterToggle() {
 
 /*  filterBtnMob --- end */
 
-
 /*  js-count  */
 document.querySelectorAll('.js-count').forEach(function (block) {
     let countInput = block.querySelector('.js-count__input');
@@ -298,7 +289,6 @@ function updateCount(input, change) {
 
 /*  js-count --- end */
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const tabButtons = document.querySelectorAll('.tab-item__title-btn');
     const tabContents = document.querySelectorAll('.tab-content');
@@ -317,11 +307,6 @@ document.addEventListener('DOMContentLoaded', function () {
         defaultTab.click();
     }
 });
-
-
-
-
-
 
 const thumbnailImages = document.querySelectorAll('.tovar-thumbnailimg');
 const mainImages = document.querySelectorAll('.tovar-generalimg');
@@ -356,8 +341,6 @@ if (closeCabinetOffcanvas) {
     });
 }
 
-
-
 let modalTriggers = document.querySelectorAll('[data-modal]');
 modalTriggers.forEach(function(trigger) {
     trigger.addEventListener('click', function(event) {
@@ -376,7 +359,6 @@ function openModal(modalId) {
 
     modal.classList.add("active");
     document.body.style.overflow = "hidden";
-
 }
 
 let closeTriggers = document.querySelectorAll('[data-close]');
@@ -391,6 +373,8 @@ closeTriggers.forEach(function(trigger) {
     });
 });
 function closeModal(modalId) {
+		clearAauthenticationStatus();
+	
     let modal = document.getElementById(modalId);
     let modalBg = document.querySelector('.modal-lining[data-close=' + modalId + ']');
     let header = document.getElementById("header");
@@ -399,12 +383,6 @@ function closeModal(modalId) {
     modal.classList.remove("active");
     document.body.style.overflow = "auto";
 }
-
-
-
-
-
-
 
 let newDivCreated = false;
 
@@ -437,3 +415,61 @@ function checkBodyHeight() {
 checkBodyHeight();
 
 window.addEventListener('resize', checkBodyHeight);
+
+
+/* 
+* AuthenticationStatus
+*/
+
+// Check if authentication modal should be shown
+const authenticationCookieValue = getCookieValue('authenticationStatus');
+switch (authenticationCookieValue) {
+	case authenticationStatus.SIGN_UP:
+		document.querySelector('#modal-login2').classList.add('active');
+		document.body.style.overflow = "hidden";
+		break;		
+	case authenticationStatus.SIGN_IN:
+		document.querySelector('#modal-signin').classList.add('active');
+		document.body.style.overflow = "hidden";
+		break;
+}
+
+// Clear
+function clearAauthenticationStatus() {
+	document.cookie = "authenticationStatus=" + authenticationStatus.CLEAR + "; expires=Thu, 101 Jan 1970 00:00:00 UTC";
+}
+
+/* 
+* Authenticated user name correction
+*/
+
+const cookieUserName = getCookieValue('userName');
+const tagUserName = document.querySelector('.header__user-name').innerHTML;
+
+if (!tagUserName) {
+	if (cookieUserName) {
+		document.querySelector('.header__sign-up').remove();
+		document.querySelector('.header__sign-up_hide').style.display = 'block';
+		document.querySelector('.header__user-name').innerHTML = cookieUserName;
+	}
+}
+
+/* 
+* Get cookie
+*/
+
+function getCookieValue(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
