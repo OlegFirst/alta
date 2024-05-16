@@ -17,7 +17,7 @@ class SignupForm extends Model
     public $password;
 		public $isLegalEntity;
 		public $companyName;
-		public $companyTypeId;
+		public $companyTypeId = 0;
 		public $companyInfo;
 		public $privacyPolicy;
 		
@@ -130,7 +130,8 @@ class SignupForm extends Model
         $user->generateAuthKey();
         $user->generateEmailVerificationToken();
 
-        return $user->save() && $this->sendEmail($user);
+        return $user->save();
+				// && $this->sendEmail($user);
     }
 
     /**

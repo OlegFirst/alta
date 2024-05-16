@@ -15,15 +15,16 @@ use yii\web\IdentityInterface;
  * @property string $username
  * @property string $phone
  * @property string $email
- * @property string $password
+ * @property string $password_hash
  * @property string $is_legal_entity
  * @property string $company_name
  * @property string $company_type_id
  * @property string $company_info
+ * @property string $verification_token
  */
  
 class User extends ActiveRecord implements IdentityInterface
-{
+{	
     const STATUS_DELETED = 0;
     const STATUS_INACTIVE = 10; // Temporary value! While registration email sending doesnt work
 		// const STATUS_INACTIVE = 9;

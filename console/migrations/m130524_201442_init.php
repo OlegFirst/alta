@@ -27,7 +27,8 @@ class m130524_201442_init extends Migration
 						'is_legal_entity' => $this->tinyInteger(1)->defaultValue(0),
 						'company_name' => $this->string(255),
 						'company_type_id' => $this->integer(10),
-						'company_info' => $this->string(255)
+						'company_info' => $this->string(255),
+						'verification_token' => $this->string(255)
         ], $tableOptions);
     }
 

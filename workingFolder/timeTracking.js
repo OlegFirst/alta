@@ -65,10 +65,22 @@ https://oleg-test1.klev.net.ua/
 olegftp@klev.net.ua
 fe?4Tv~ksoN4hj
 
+/* Data base */
+'username' => 'grnweswb_oleg_dbuser',
+'password' => '@NPsE0w1$uiAfg',
+
 /*
 * TO DO:
 */
 - signin -> rememberMe realize
+
+/*
+* Before fill into hoisting. Change files
+*/
+
+- C:\xampp\htdocs\alta\common\config\main-local.php
+- C:\xampp\htdocs\alta\frontend\config\main.php
+- C:\xampp\htdocs\alta\backend\config\main.php
 
 
 // CRUD video
