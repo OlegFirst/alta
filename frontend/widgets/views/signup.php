@@ -11,7 +11,7 @@
             <div class="modal-block">						
 							 <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
 									<div class="modal-login__title">
-											<span>
+											<span class="modal-login__title-sign-up">
 													Реєстрація
 											</span>
 											

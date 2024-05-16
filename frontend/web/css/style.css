@@ -4734,10 +4734,13 @@ main {
     border-bottom: 1px solid #F79E1B;
     margin-bottom: 24px;
 }
+.modal-login__title-sign-up {
+	padding-top: 20px;
+}
 .modal-login__sign-in {
 	position: relative;
 	color: #12203A;
-	top: 22px;
+	top: -17px;
 	left: -128px;
 	text-decoration: underline;
 	font-size: 14px;

@@ -1,10 +1,15 @@
 <?php
+/** 
+	@var common\models\User $model
+	@var common\models\UserRole $model
+*/
 
 namespace frontend\models;
 
 use Yii;
 use yii\base\Model;
 use common\models\User;
+use frontend\models\UserRole;
 
 /**
  * Signup form
@@ -129,10 +134,27 @@ class SignupForm extends Model
 				$user->company_info = $this->companyInfo;
         $user->generateAuthKey();
         $user->generateEmailVerificationToken();
-
-        return $user->save();
-				// && $this->sendEmail($user);
+				
+				if ($user->save()) {
+					return $this->saveUserRole();
+				}
+				
+				return false;
     }
+		
+		private function saveUserRole()
+		{
+				$savedUser = User::findByEmail($this->email);
+				$id = $savedUser['id'];
+				$roleAlias = $this->isLegalEntity ? 'legalEntity' : 'physicalPerson';
+				$roleName = Yii::$app->FrontendUser->getUserRole($roleAlias);
+				
+				$modelUserRole = new UserRole();
+				$modelUserRole->item_name = $roleName;
+				$modelUserRole->user_id = $id;
+				
+				return $modelUserRole->save();
+		}
 
     /**
      * Sends confirmation email to user

@@ -86,6 +86,11 @@
 			return $this->render('price');
 		}
 		
+		public function actionDiscountSystem()
+		{
+			return $this->render('discountSystem');
+		}
+		
 		public function actionWholesalers()
 		{
 			return $this->render('wholesalers');

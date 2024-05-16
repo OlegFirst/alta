@@ -1,5 +1,4 @@
 <?php
-
 namespace app\components;
 
 use Yii;
@@ -24,6 +23,7 @@ class FrontendUser extends Component
 		
 		// @'name' equals 'name' in the 'auth_item' - table of the data base
 		$this->userRoles = [
+			['name' => 'error', 'alias' => 'notFound'],
 			['name' => 'physical-person', 'alias' => 'physicalPerson'],
 			['name' => 'legal-entity', 'alias' => 'legalEntity']
 		];
@@ -35,6 +35,7 @@ class FrontendUser extends Component
 		return Yii::$app->user->identity ? Yii::$app->user->identity->username : null;
 	}
 	
+	// User role_(start)
 	public function is($alias) {
 		$roleName = null;
 		
@@ -52,6 +53,14 @@ class FrontendUser extends Component
 			
 		return false;
 	}
+	
+	public function getUserRole($alias) {
+		$notFoundItem = $this->userRoles[0]['name'];
+		$index = array_search($alias, array_column($this->userRoles, 'alias'));
+			
+		return $index == true ? $this->userRoles[$index]['name'] : $notFoundItem;
+	}
+	// User role_(end)
 	
 	public function signout() {
 		Yii::$app->user->logout();

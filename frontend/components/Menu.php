@@ -32,7 +32,7 @@ class Menu extends Component
     }
 		
 		public function get($alias) {
-			$notFoundItem = ['url' => '#', 'text' => '', 'alias' => ''];			
+			$notFoundItem = ['url' => '#', 'text' => '', 'alias' => ''];
 			$index = array_search($alias, array_column($this->model, 'alias'));
 			
 			return $index == true ? $this->model[$index] : $notFoundItem;
