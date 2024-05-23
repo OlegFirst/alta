@@ -37,12 +37,15 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+				'request' => [
+					// 'baseUrl' => '/alta',
+				],
         'urlManager' => [
-            // 'enablePrettyUrl' => true,
-            // 'showScriptName' => false,
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
 						'rules' => [
-								// 'one' => 'site/one',
-								// '<script>' => 'site/<script>'
+							'blog' => 'blog',
+							'<script>' => 'site/<script>'
             ],
 				],
 				'menu' => [

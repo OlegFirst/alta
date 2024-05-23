@@ -1,11 +1,11 @@
 /*
 * Time
 */
-
-
-
+ 
+ 15.40-
+ 
 -------------------------------
-Total: 8h + 12h + 8h Need to be payed
+Total: 3h
 
 /*
 * Layout files/folder are used:
@@ -51,7 +51,7 @@ Total: 8h + 12h + 8h Need to be payed
 - file - 'tovar.php'
 
 /*
-*	Hosted project
+*	Hosting Layout project
 */
 http://mir-test1.klev.net.ua/alta_metiz
 
@@ -80,6 +80,7 @@ fe?4Tv~ksoN4hj
 - C:\xampp\htdocs\alta\common\config\main-local.php
 - C:\xampp\htdocs\alta\frontend\config\main.php
 - C:\xampp\htdocs\alta\backend\config\main.php
+- C:\xampp\htdocs\alta\frontend\components\Menu.php
 
 
 // CRUD video

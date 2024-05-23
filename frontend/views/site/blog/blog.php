@@ -1,5 +1,6 @@
 <?php
-	$this->title = 'Блог';
+	$title = Yii::$app->menu->get('blog')['text'];
+	$this->title = $title;
 ?>
 
 <section class="p-blog pt-s">
@@ -15,13 +16,13 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    Блог
+                    <?= $title ?>
                 </li>
             </ol>
         </nav>
 
         <div class="d-flex justify-content-center">
-            <h1 class="h1-title text-center">Блог</h1>
+            <h1 class="h1-title text-center"><?= $title ?></h1>
         </div>
 
         <div class="blog__subtitle-wrap">
@@ -52,27 +53,32 @@
         <div class="row">
             <?php for ($i = 0; $i < 12; $i++) { ?>
                 <div class="col-xl-3 col-lg-4 col-sm-6 s-catalog__mt">
-
                     <div class="block-news">
-                        <a href="" class="block-news__img">
+                        <a href="<?= Yii::$app->menu->get('blogArticle')['url'] ?>" class="block-news__img">
                             <div class="block-news__tag">
                                 Саморізи
                             </div>
                             <img src="uploads/recomendation-slider__bolt.jpg" alt="">
                         </a>
 
-                        <a href="" class="block-news__title">Як вибрати якісний саморіз
-                        для своїх потреб</a>
-                        <div class="block-news__text">
-                            Розрізняють два основних види 
-                            саморізів: cаморізи по дереву і  по металу.Якщо вам необхідно 
-                            прикріпити металочерепицю до ...
-                        </div>
-
-                        <div class="block-news__info">
-                            <div class="block-news__info-date">24.02.2023</div>
-                            <div class="block-news__info-views">2567</div>
-                        </div>
+                        <a href="" class="block-news__title">
+													Як вибрати якісний саморіз для своїх потреб
+												</a>
+												
+												<a href="<?= Yii::$app->menu->get('blogArticle')['url'] ?>">
+													<div class="block-news__text">
+															Розрізняють два основних види 
+															саморізів: cаморізи по дереву і  по металу.Якщо вам необхідно 
+															прикріпити металочерепицю до ...
+													</div>
+												</a>
+												
+												<a href="<?= Yii::$app->menu->get('blogArticle')['url'] ?>">
+													<div class="block-news__info">
+															<div class="block-news__info-date">24.02.2023</div>
+															<div class="block-news__info-views">2567</div>
+													</div>
+												</a>
                     </div>
                 </div>
             <?php } ?>

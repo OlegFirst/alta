@@ -1,5 +1,4 @@
 <?php
-
 	namespace frontend\controllers;
 	use yii\web\Controller;
 	use yii\filters\VerbFilter;
@@ -78,7 +77,12 @@
 		
 		public function actionBlog()
 		{
-			return $this->render('blog');
+			return $this->render('blog/blog');
+		}
+		
+		public function actionBlogArticle()
+		{
+			return $this->render('blog/blogArticle');
 		}
 		
 		public function actionPrice()

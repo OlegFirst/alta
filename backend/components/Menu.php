@@ -1,7 +1,5 @@
 <?php
-
 namespace app\components;
-
 use yii\base\Component;
 
 class Menu extends Component
@@ -12,8 +10,7 @@ class Menu extends Component
         parent::init();
 
         $this->model = [
-					['label' => 'Каталог товарів', 'url' => ['/one']],
-					['label' => 'Каталог товарів1', 'url' => ['/site/one']]
+					['url' => 'blog', 'label' => 'Блог']
 				];
     }
 		

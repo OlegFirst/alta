@@ -36,7 +36,7 @@ class FrontendUser extends Component
 	}
 	
 	// User role_(start)
-	public function is($alias) {
+	public function is($alias) {		
 		$roleName = null;
 		
 		forEach ($this->userRoles as $item) {

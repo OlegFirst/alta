@@ -45,7 +45,7 @@ class CabinetMenu extends Component
 			return $resultItem ?? $notFoundItem;
 		}
 		
-		public function getMenu() {
+		public function getMenu() {			
 			if (Yii::$app->FrontendUser->is('physicalPerson')) {
 				return $this->getPhysicalPersonMenu();
 			}
