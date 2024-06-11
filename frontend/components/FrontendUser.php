@@ -5,7 +5,7 @@ use Yii;
 use yii\base\Component;
 use common\models\User;
 
-/**
+/*
 * Extended yii/web/user
 *
 * - This allow to do 'Yii::$app->user->SOMETHING'
@@ -14,8 +14,7 @@ use common\models\User;
 */
 
 class FrontendUser extends Component
-{
-	
+{	
 	private $userRoles;
 	
 	public function init() {

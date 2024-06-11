@@ -1,11 +1,10 @@
 /*
 * Time
 */
- 
- 15.40-
+10.45-
  
 -------------------------------
-Total: 3h
+Total: 16h
 
 /*
 * Layout files/folder are used:
@@ -50,6 +49,8 @@ Total: 3h
 - file - 'supplier.php'
 - file - 'tovar.php'
 
+<a href="<?= Yii::$app->menu->get('main')['url'] ?>">
+
 /*
 *	Hosting Layout project
 */
@@ -78,9 +79,19 @@ fe?4Tv~ksoN4hj
 * Before fill into hoisting. Change files
 */
 - C:\xampp\htdocs\alta\common\config\main-local.php
+
 - C:\xampp\htdocs\alta\frontend\config\main.php
+
 - C:\xampp\htdocs\alta\backend\config\main.php
+	'baseUrl' => '/'
+	
 - C:\xampp\htdocs\alta\frontend\components\Menu.php
+	['url' => '/', 'text' => 'Головна', 'alias' => 'main']
+
+/*
+* DB changes
+*/
+- blog table
 
 
 // CRUD video

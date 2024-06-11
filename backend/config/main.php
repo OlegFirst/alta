@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
+		// 'homeUrl' => '/admin',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
@@ -38,7 +39,7 @@ return [
             'errorAction' => 'site/error',
         ],
 				'request' => [
-					// 'baseUrl' => '/alta',
+						// 'baseUrl' => '/admin',
 				],
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -47,6 +48,12 @@ return [
 							'blog' => 'blog',
 							'<script>' => 'site/<script>'
             ],
+				],
+				'urlManagerFrontend' => [
+						'class' => 'yii\web\urlManager',
+						'baseUrl' => '../../frontend/web/',
+						'enablePrettyUrl' => true,
+            'showScriptName' => false,
 				],
 				'menu' => [
 						'class' => 'app\components\Menu'

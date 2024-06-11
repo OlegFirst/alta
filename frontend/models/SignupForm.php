@@ -1,5 +1,5 @@
 <?php
-/** 
+/* 
 	@var common\models\User $model
 	@var common\models\UserRole $model
 */
@@ -11,7 +11,7 @@ use yii\base\Model;
 use common\models\User;
 use frontend\models\UserRole;
 
-/**
+/*
  * Signup form
  */
 class SignupForm extends Model

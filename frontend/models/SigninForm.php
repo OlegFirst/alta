@@ -20,10 +20,8 @@ class SigninForm extends Model
     public function rules()
     {
         return [
-						['email', 'required', 'message' => 'Email не може бути порожнім'],
-						
-						['password', 'validatePassword'],
-						
+						['email', 'required', 'message' => 'Email не може бути порожнім'],						
+						['password', 'validatePassword'],						
 						// ['rememberMe', 'integer']
         ];
     }

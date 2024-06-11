@@ -1,5 +1,51 @@
-<?php	
-	$this->title = 'Blog';
+<?php
+	use yii\helpers\Html;
+	use yii\grid\ActionColumn;
+	use yii\grid\GridView;
+	use yii\widgets\Pjax;
+
+	$this->title = 'Блог';
+	$this->params['breadcrumbs'][] = $this->title;
 ?>
 
-Blog!
+<p>
+	<?= Html::a('Створити блог', ['create'], ['class' => 'btn btn-success']) ?>
+</p>
+
+<?php
+	Pjax::begin();
+		echo GridView::widget([
+			'dataProvider' => $dataProvider,
+			'columns' => [
+				'id',
+				'label',
+				'title',
+				[
+					'attribute' => 'file',
+					'format' => 'raw',
+					'value' => function($model) {
+						return Html::img(
+							Yii::$app->urlManagerFrontend->baseUrl.'/uploads/blog/'.$model->image_name,
+							['width' => 200, 'alt' => 'picture']
+						);
+					},
+				],
+				[
+					'attribute' => 'text',
+					'format' => 'raw',
+					'value' => function($model) {
+						return $model->text;
+					}
+				],
+				'created_at',
+				'view_count',
+				'sort',
+				'status',
+				[
+					'class' => ActionColumn::className(),
+					'template' => '{update} {delete}',
+				]
+			]
+		]);
+	Pjax::end(); 
+?>

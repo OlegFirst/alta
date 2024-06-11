@@ -1,8 +1,32 @@
 <div class='popular-article'>
-	<h2 class='popular-article__title'>Популярні статті</h2>
+	<div class='popular-article__top'>
+		<h2 class='popular-article__top-title'>Популярні статті</h2>
+		
+		<div class='popular-article__top-buttons'>
+			<img
+				class='popular-article__top-buttons-left'
+				src="img/button-arrow-left.png"
+				width='36'
+				height='36'
+				alt="left"
+			>
+			
+			<img
+				class='popular-article__top-buttons-right'
+				src="img/button-arrow-left.png"
+				width='36'
+				height='36'
+				alt="right"
+			>
+		</div>
+	</div>
+	
+	<div class='popular-article__progress-line'>
+		<div class='popular-article__progress-line-active'></div>
+	</div>
 
 	<div class="row">
-		<?php for ($i = 0; $i < 12; $i++) { ?>
+		<?php for ($i = 0; $i < 4; $i++) { ?>
 			<div class="col-xl-3 col-lg-4 col-sm-6 s-catalog__mt">
 				<div class="block-news">
 					<a href="<?= Yii::$app->menu->get('blogArticle')['url'] ?>" class="block-news__img">

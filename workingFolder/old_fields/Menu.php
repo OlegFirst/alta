@@ -1,6 +1,7 @@
 <?php
 
 namespace app\components;
+
 use yii\base\Component;
 
 class Menu extends Component
@@ -12,13 +13,11 @@ class Menu extends Component
 
         $this->model = [
 					['url' => '#', 'text' => '', 'alias' => ''],
-					// ['url' => '/alta', 'text' => 'Головна', 'alias' => 'main'],
 					['url' => '/', 'text' => 'Головна', 'alias' => 'main'],
 					['url' => 'logout', 'text' => 'SignUp', 'alias' => 'signup'],
 					['url' => 'logout', 'text' => 'SignOut', 'alias' => 'signout'],
 					['url' => 'about', 'text' => 'Про компанію', 'alias' => 'about'],
 					['url' => 'blog', 'text' => 'Блог', 'alias' => 'blog'],
-					['url' => 'blog-article', 'text' => 'Статті', 'alias' => 'blogArticle'],
 					['url' => 'price', 'text' => 'Прайс-лист', 'alias' => 'price'],
 					['url' => 'discount-system', 'text' => 'Дисконтна система', 'alias' => 'discontSystem'],
 					['url' => 'wholesalers', 'text' => 'Оптовикам', 'alias' => 'wholesalers'],
@@ -33,7 +32,7 @@ class Menu extends Component
     }
 		
 		public function get($alias) {
-			$notFoundItem = ['url' => '#', 'text' => '', 'alias' => ''];
+			$notFoundItem = ['url' => '#', 'text' => '', 'alias' => ''];			
 			$index = array_search($alias, array_column($this->model, 'alias'));
 			
 			return $index == true ? $this->model[$index] : $notFoundItem;

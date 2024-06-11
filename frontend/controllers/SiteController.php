@@ -1,10 +1,14 @@
 <?php
 	namespace frontend\controllers;
+
 	use yii\web\Controller;
 	use yii\filters\VerbFilter;
-	use yii\filters\AccessControl;
+	use yii\filters\AccessControl;	
 	use frontend\models\SignupForm;
+	use frontend\models\BlogForm;
 	use frontend\models\TestForm;
+	use common\models\Blog;
+	use yii\data\Pagination;
 	use Yii;
 
 	class SiteController extends Controller
@@ -77,12 +81,33 @@
 		
 		public function actionBlog()
 		{
-			return $this->render('blog/blog');
+			$model = Blog::find()->where(['status' => 1])->orderBy('sort');
+			
+			$pagination = new Pagination([
+				'defaultPageSize' => 1,
+				'totalCount' => $model->count()
+			]);
+			$model = $model->offset($pagination->offset)->limit($pagination->limit)->all();
+			
+			$formModel = new BlogForm();
+			
+			if ($formModel->load(Yii::$app->request->post())) {
+				$blogId = $formModel->getBlogId();
+				
+				if ($blogId) {
+					return $this->redirect(['blog-article', 'id' => $blogId]);
+				}
+			}
+			
+			return $this->render('blog/blog', compact('model', 'formModel', 'pagination'));
 		}
 		
 		public function actionBlogArticle()
 		{
-			return $this->render('blog/blogArticle');
+			$blogId = Yii::$app->request->queryParams;
+			$model = Blog::findOne(['id' => $blogId]);
+			
+			return $this->render('blog/blogArticle', compact('model'));
 		}
 		
 		public function actionPrice()

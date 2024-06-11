@@ -8,15 +8,12 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-		'homeUrl' => '/',
 		'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-frontend',
-						'baseUrl' => '/',
-						// 'baseUrl' => '/alta',
+            'csrfParam' => '_csrf-frontend'
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -40,6 +37,9 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+				'request' => [
+						'baseUrl' => '/',
+				],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,

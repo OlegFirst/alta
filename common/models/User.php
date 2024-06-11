@@ -1,14 +1,12 @@
 <?php
-
 namespace common\models;
-
 use Yii;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
-/**
+/*
  * User model
  *
  * @property integer $id
@@ -21,6 +19,7 @@ use yii\web\IdentityInterface;
  * @property string $company_type_id
  * @property string $company_info
  * @property string $verification_token
+ *
  */
  
 class User extends ActiveRecord implements IdentityInterface
