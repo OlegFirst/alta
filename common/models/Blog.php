@@ -15,6 +15,7 @@ use Yii;
  * @property integer $view_count
  * @property integer $sort
  * @property integer $status
+ * @property integer $is_popular
  *
  */
 
@@ -22,6 +23,7 @@ use Yii;
 * NB: 
 * $sort - direction of showing blog`s articles
 *	$status = 0 (visible) or 1 (hidden)
+* $is_popular = 1 or 0 ( is shown in a blog article slider or not )
 */
 
 class Blog extends ActiveRecord
@@ -37,9 +39,9 @@ class Blog extends ActiveRecord
 	{
 		return [
 			[['label', 'title', 'image_name', 'text', 'created_at'], 'string'],
-			[['view_count', 'sort', 'status'], 'integer'],
+			[['view_count', 'sort', 'status', 'is_popular'], 'integer'],
 			[['file'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg, svg'],
-			[['label', 'title', 'image_name', 'text', 'created_at', 'view_count', 'sort'], 'required'],
+			[['label', 'title', 'image_name', 'text', 'created_at', 'view_count', 'sort'], 'required']			
 		];
 	}
 	
@@ -54,7 +56,8 @@ class Blog extends ActiveRecord
 			'created_at' => 'Created at',
 			'view_count' => 'View count',
 			'sort' => 'Sort',
-			'status' => 'Status'
+			'status' => 'Status',
+			'is_popular' => 'The article is pupular'
 		];
 	}
 	

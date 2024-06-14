@@ -1,7 +1,5 @@
 <?php
-
 	$this->title = 'Про компанію';
-
 ?>
 
 <section class="p-about pt-s pb-m">

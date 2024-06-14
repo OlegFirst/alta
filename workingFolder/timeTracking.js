@@ -1,10 +1,14 @@
 /*
 * Time
 */
-10.45-
- 
+
+
 -------------------------------
-Total: 16h
+Total: 16h 55min
+
+/*
+* Bugs
+*/
 
 /*
 * Layout files/folder are used:
@@ -48,6 +52,7 @@ Total: 16h
 - file - 'opt.php'
 - file - 'supplier.php'
 - file - 'tovar.php'
+- file - 'news.php'
 
 <a href="<?= Yii::$app->menu->get('main')['url'] ?>">
 
@@ -82,7 +87,7 @@ fe?4Tv~ksoN4hj
 
 - C:\xampp\htdocs\alta\frontend\config\main.php
 
-- C:\xampp\htdocs\alta\backend\config\main.php
+- C:\xampp\htdocs\alta\backend\config\main.php - ? -
 	'baseUrl' => '/'
 	
 - C:\xampp\htdocs\alta\frontend\components\Menu.php

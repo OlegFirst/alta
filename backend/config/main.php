@@ -39,14 +39,18 @@ return [
             'errorAction' => 'site/error',
         ],
 				'request' => [
+						// Hosting
+						'baseUrl' => '/',
+				
 						// 'baseUrl' => '/admin',
 				],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
 						'rules' => [
+							'admin' => 'site/admin',
 							'blog' => 'blog',
-							'<script>' => 'site/<script>'
+							// '<script>' => 'site/<script>'
             ],
 				],
 				'urlManagerFrontend' => [

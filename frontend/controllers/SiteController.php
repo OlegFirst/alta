@@ -84,7 +84,7 @@
 			$model = Blog::find()->where(['status' => 1])->orderBy('sort');
 			
 			$pagination = new Pagination([
-				'defaultPageSize' => 1,
+				'defaultPageSize' => 4,
 				'totalCount' => $model->count()
 			]);
 			$model = $model->offset($pagination->offset)->limit($pagination->limit)->all();
@@ -105,9 +105,21 @@
 		public function actionBlogArticle()
 		{
 			$blogId = Yii::$app->request->queryParams;
-			$model = Blog::findOne(['id' => $blogId]);
 			
-			return $this->render('blog/blogArticle', compact('model'));
+			$model = Blog::findOne(['id' => $blogId]);
+			$popularArticles = Blog::find()->where(['is_popular' => 1])->orderBy('sort')->all();
+			$formModel = new BlogForm();
+			
+			if ($formModel->load(Yii::$app->request->post())) {
+				// return $this->redirect('index');				
+				$currentBlogId = $formModel->getBlogId();
+				
+				if ($currentBlogId) {
+					return $this->redirect(['blog-article', 'id' => $currentBlogId]);
+				}
+			}
+			
+			return $this->render('blog/blogArticle', compact('model', 'popularArticles', 'formModel'));
 		}
 		
 		public function actionPrice()

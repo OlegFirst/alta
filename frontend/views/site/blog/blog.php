@@ -2,6 +2,7 @@
 	use yii\bootstrap5\Html;
 	use yii\bootstrap5\ActiveForm;
 	use yii\widgets\LinkPager;
+	use frontend\widgets\BlockNews;
 
 	$this->title = 'Блог';
 ?>
@@ -56,33 +57,16 @@
         <div class="row">
             <?php 
 								foreach ($model as $item):
-										$form = ActiveForm::begin([
+									echo BlockNews::widget([
+										'model' => $item,
+										'isTextShow' => true,
+										'formModel' => $formModel,
+										'activeFormAttributes' => [
 												'options' => [
 														'class' => 'col-xl-3 col-lg-4 col-sm-6 s-catalog__mt'
 												]
-										]);
-						?>
-											<button class="block-news__wrapper" type="submit">
-													<div class="block-news">
-															<div class="block-news__img">
-																<div class="block-news__tag"><?= $item['label'] ?></div>																	
-																<img src="<?= 'uploads/blog/'.$item['image_name'] ?>" alt="blog-image">
-															</div>
-
-															<div class="block-news__title"><?= $item['title'] ?></div>
-															
-															<div class="block-news__text"><?= $item['text'] ?></div>																	
-															
-															<div class="block-news__info">
-																	<div class="block-news__info-date"><?= $item['created_at'] ?></div>
-																	<div class="block-news__info-views"><?= $item['view_count'] ?></div>
-															</div>
-													</div>
-													
-													<?= $form->field($formModel, 'id')->hiddenInput(['value' => $item['id']])->label(false) ?>
-											</button>									
-						<?php 
-										ActiveForm::end();
+											]
+									]);
 								endforeach; 
 						?>
 				</div>

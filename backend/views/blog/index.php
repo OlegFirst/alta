@@ -41,6 +41,7 @@
 				'view_count',
 				'sort',
 				'status',
+				'is_popular',
 				[
 					'class' => ActionColumn::className(),
 					'template' => '{update} {delete}',

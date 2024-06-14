@@ -1,5 +1,8 @@
 <?php
+	use yii\bootstrap5\ActiveForm;
+
 	$this->title = Yii::$app->menu->get('blogArticle')['text'];
+	use frontend\widgets\BlockNews;
 ?>
 
 <section class="p-blog pt-s">
@@ -51,8 +54,61 @@
 						<?= $model['text'] ?>
 				</div>
 			</div>
-			
-			<?php include 'blogPopularArticle.php'; ?>
 		</div>
 	</div>
+</section>
+
+<section class="s-recomendation-slider pt-m mb-m">
+    <div class="container">
+        <h1 class="h1-title h1-title--slider">Популярні статті</h1>
+
+        <div class="splide recomendation-slider" aria-label="">
+            <div class="h1-title__slider-progress">
+                <div class="h1-title__slider-progress-bar"></div>
+            </div>
+						
+            <div class="splide__track">
+                <ul class="splide__list">										
+										<?php foreach ($popularArticles as $item): ?>										
+												<li class="splide__slide">
+													<?= 
+														BlockNews::widget([ 
+															'model' => $item,
+															'isTextShow' => false,
+															'formModel' => $formModel,
+															'activeFormAttributes' => null
+														])
+													?>
+												</li>												
+										<?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            var mainSlider = new Splide('.recomendation-slider', {
+                perPage: 4,
+                perMove: 1,
+                gap: 30,
+                pagination: false,
+                breakpoints: {
+                    1260: {
+                        perPage: 3,
+                        gap: 20,
+                    },
+                    768: {
+                        autoWidth: true,
+                        perPage: false,
+                    }
+                }
+            });
+            var bar = mainSlider.root.querySelector('.h1-title__slider-progress-bar');
+            mainSlider.on('mounted move', function() {
+                var end  = mainSlider.Components.Controller.getEnd() + 1;
+                var rate = Math.min(( mainSlider.index + 1 ) / end, 1);
+                bar.style.width = String(100 * rate) + '%';
+            });
+            mainSlider.mount();
+        </script>
+    </div>
 </section>

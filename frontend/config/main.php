@@ -8,14 +8,16 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-		'homeUrl' => '/',
+		//'homeUrl' => '/alta',
 		'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
+						// Hosting
 						'baseUrl' => '/',
+						
 						// 'baseUrl' => '/alta',
         ],
         'user' => [

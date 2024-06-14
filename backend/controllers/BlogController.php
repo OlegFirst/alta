@@ -24,8 +24,7 @@ class BlogController extends Controller
 				],
 			]
 		);
-	}
-	
+	}	
 
 	 public function actions()
 	{

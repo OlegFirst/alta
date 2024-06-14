@@ -12,8 +12,12 @@ class Menu extends Component
 
         $this->model = [
 					['url' => '#', 'text' => '', 'alias' => ''],
+					
 					// ['url' => '/alta', 'text' => 'Головна', 'alias' => 'main'],
+					
+					// Hosting
 					['url' => '/', 'text' => 'Головна', 'alias' => 'main'],
+					
 					['url' => 'logout', 'text' => 'SignUp', 'alias' => 'signup'],
 					['url' => 'logout', 'text' => 'SignOut', 'alias' => 'signout'],
 					['url' => 'about', 'text' => 'Про компанію', 'alias' => 'about'],
