@@ -38,11 +38,9 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-				'request' => [
-						// Hosting
-						'baseUrl' => '/',
-				
-						// 'baseUrl' => '/admin',
+				'request' => [						
+						// 'baseUrl' => '/',				
+						'baseUrl' => '/admin',
 				],
         'urlManager' => [
             'enablePrettyUrl' => true,

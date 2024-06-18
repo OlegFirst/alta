@@ -72,6 +72,8 @@ olegftp@klev.net.ua
 fe?4Tv~ksoN4hj
 
 /* Data base */
+https://oleg-test1.klev.net.ua/frontend/web/phpAdmin/
+
 'username' => 'grnweswb_oleg_dbuser',
 'password' => '@NPsE0w1$uiAfg',
 
@@ -96,11 +98,18 @@ fe?4Tv~ksoN4hj
 /*
 * DB changes
 */
-- blog table
 
+/*
+* Hosting Admin credentials
+*/
+login: admin
+password: password1234
 
-// CRUD video
-https://www.youtube.com/watch?v=O7oEl7TUqtA
-
-// User roles
-https://www.yiiframework.com/doc/guide/2.0/en/security-authorization
+sort - autoincrement
+sort equals
+data picker
+view - how many times
+fix - layout
+label - dropdown list - create db table
+type - news or blog
+rate - admin set in

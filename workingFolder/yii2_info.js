@@ -1,3 +1,9 @@
+// CRUD video
+https://www.youtube.com/watch?v=O7oEl7TUqtA
+
+// User roles
+https://www.yiiframework.com/doc/guide/2.0/en/security-authorization
+
 //
 // $this->goHome();
 //
