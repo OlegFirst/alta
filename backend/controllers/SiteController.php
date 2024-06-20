@@ -71,7 +71,7 @@ class SiteController extends Controller
 						// return $this->goBack();
         }
 
-        return $this->render('admin', [
+        return $this->render('login', [
             'model' => $model
         ]);
     }
@@ -82,14 +82,4 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
-		
-		public function actionGoodsCatalog()
-		{
-			return $this->render('goodsCatalog');
-		}
-		
-		public function actionOne()
-		{
-			return $this->render('one');
-		}
 }

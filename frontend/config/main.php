@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
+		// TO DO: remove
 		//'homeUrl' => '/alta',
 		'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -16,9 +17,9 @@ return [
         'request' => [
             'csrfParam' => '_csrf-frontend',
 						// Hosting
-						'baseUrl' => '/',
+						// 'baseUrl' => '/',
 						
-						// 'baseUrl' => '/alta',
+						'baseUrl' => '/alta',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -27,7 +28,6 @@ return [
 						'enableSession' => true,
         ],
         'session' => [
-            // this is the name of the session cookie used for login on the frontend
             'name' => 'advanced-frontend',
         ],
         'log' => [
@@ -45,8 +45,9 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [						
-							'<script>' => 'site/<script>'
+            'rules' => [
+							'blog' => '/blog',
+							'<script>' => '/site/<script>'
             ],
         ],
 				'FrontendUser' => [

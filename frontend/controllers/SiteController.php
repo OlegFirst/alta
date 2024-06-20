@@ -5,10 +5,6 @@
 	use yii\filters\VerbFilter;
 	use yii\filters\AccessControl;	
 	use frontend\models\SignupForm;
-	use frontend\models\BlogForm;
-	use frontend\models\TestForm;
-	use common\models\Blog;
-	use yii\data\Pagination;
 	use Yii;
 
 	class SiteController extends Controller
@@ -77,49 +73,6 @@
 		public function actionAbout()
 		{
 			return $this->render('about');
-		}
-		
-		public function actionBlog()
-		{
-			$model = Blog::find()->where(['status' => 1])->orderBy('sort');
-			
-			$pagination = new Pagination([
-				'defaultPageSize' => 4,
-				'totalCount' => $model->count()
-			]);
-			$model = $model->offset($pagination->offset)->limit($pagination->limit)->all();
-			
-			$formModel = new BlogForm();
-			
-			if ($formModel->load(Yii::$app->request->post())) {
-				$blogId = $formModel->getBlogId();
-				
-				if ($blogId) {
-					return $this->redirect(['blog-article', 'id' => $blogId]);
-				}
-			}
-			
-			return $this->render('blog/blog', compact('model', 'formModel', 'pagination'));
-		}
-		
-		public function actionBlogArticle()
-		{
-			$blogId = Yii::$app->request->queryParams;
-			
-			$model = Blog::findOne(['id' => $blogId]);
-			$popularArticles = Blog::find()->where(['is_popular' => 1])->orderBy('sort')->all();
-			$formModel = new BlogForm();
-			
-			if ($formModel->load(Yii::$app->request->post())) {
-				// return $this->redirect('index');				
-				$currentBlogId = $formModel->getBlogId();
-				
-				if ($currentBlogId) {
-					return $this->redirect(['blog-article', 'id' => $currentBlogId]);
-				}
-			}
-			
-			return $this->render('blog/blogArticle', compact('model', 'popularArticles', 'formModel'));
 		}
 		
 		public function actionPrice()

@@ -2,6 +2,11 @@
 	use yii\bootstrap5\Html;
 	use yii\bootstrap5\ActiveForm;
 	use kartik\editors\Summernote;
+	
+	/*
+	*	@models:	Blog, Category
+	* @var:	$sortMax ( max OR null )
+	*/
 ?>
 
 <div>
@@ -10,7 +15,19 @@
 	
 		echo "<br>";
 		
-		echo $form->field($model, 'label')->textInput();
+		$categoryList = [];
+		foreach($categoryModel as $item) {
+			$categoryList[$item['id']] = $item['name'];
+		}
+		
+		echo $form
+			->field($model, 'category_id')
+			->dropdownList($categoryList, [
+				'prompt' => 'Виберіть категорію',
+				'class' => 'modal-login__form-select'],
+				['options' => ['1' => ['Selected' => true]]
+			])
+			->label(false);
 		
 		echo $form->field($model, 'title')->textInput();
 		
@@ -31,7 +48,7 @@
 		
 		echo $form->field($model, 'view_count')->textInput();
 		
-		echo $form->field($model, 'sort')->textInput();
+		echo $form->field($model, 'sort')->textInput(['value' => $model->sort ?? $sortMax]);
 		
 		echo $form->field($model, 'status')->checkbox();		
 		

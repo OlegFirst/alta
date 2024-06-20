@@ -9,5 +9,5 @@ $this->params['breadcrumbs'][] = $this->title;
 <div>
 	<h1><?= Html::encode($this->title) ?></h1>
 
-	<?= $this->render('_form', ['model' => $model]) ?>
+	<?= $this->render('_form', compact('model', 'sortMax', 'categoryModel')) ?>
 </div>

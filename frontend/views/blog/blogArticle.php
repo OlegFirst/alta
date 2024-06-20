@@ -1,8 +1,10 @@
 <?php
 	use yii\bootstrap5\ActiveForm;
-
-	$this->title = Yii::$app->menu->get('blogArticle')['text'];
 	use frontend\widgets\BlockNews;
+	
+	include_once '../../common/utils/utils.php';
+
+	$this->title = Yii::$app->menu->get('blogArticle')['text'];	
 ?>
 
 <section class="p-blog pt-s">
@@ -40,11 +42,11 @@
 					
 					<div class="block-news__tag-wrapper">
 						<div class="block-news__tag">
-							<?= $model['label'] ?>
+							<?= $model['category_name'] ?>
 						</div>
 						<img 
 							class='article__image'
-							src="<?= 'uploads/blog/'.$model->image_name ?>"
+							src="<?= createImagePath('uploads/blog/'.$model['image_name']) ?>"
 							alt="article-image"
 						>
 					</div>

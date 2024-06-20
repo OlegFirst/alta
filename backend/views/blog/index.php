@@ -18,15 +18,15 @@
 			'dataProvider' => $dataProvider,
 			'columns' => [
 				'id',
-				'label',
+				'category_id',
 				'title',
 				[
 					'attribute' => 'file',
 					'format' => 'raw',
 					'value' => function($model) {
 						return Html::img(
-							Yii::$app->urlManagerFrontend->baseUrl.'/uploads/blog/'.$model->image_name,
-							['width' => 200, 'alt' => 'picture']
+							Yii::$app->urlManagerFrontend->baseUrl.'/uploads/blog/'.$model['image_name'],
+							['width' => 100, 'alt' => 'picture']
 						);
 					},
 				],
@@ -34,7 +34,7 @@
 					'attribute' => 'text',
 					'format' => 'raw',
 					'value' => function($model) {
-						return $model->text;
+						return $model['text'];
 					}
 				],
 				'created_at',

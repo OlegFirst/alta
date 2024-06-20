@@ -1,5 +1,8 @@
 <?php 
 	use yii\bootstrap5\ActiveForm;
+	
+	include_once '../../common/utils/utils.php';
+	
 	$form = ActiveForm::begin(
 		$activeFormAttributes ?? []
 	); 
@@ -9,9 +12,13 @@
 		<div class="block-news">
 			<div class="block-news__img">
 				<div class="block-news__tag">
-					<?= $model['label'] ?>
+					<?= $model['category_name'] ?>
 				</div>
-				<img src="<?= 'uploads/blog/'.$model['image_name'] ?>" alt="picture">
+				
+				<img
+					src="<?= createImagePath('uploads/blog/'.$model['image_name']) ?>"
+					alt="picture"
+				>
 			</div>
 			
 			<div class='block-news__title'><?= $model['title'] ?></div>

@@ -7,7 +7,7 @@ use Yii;
  * Blog model
  *
  * @property integer $id
- * @property string $label
+ * @property string $category_id
  * @property string $title
  * @property string $image_name
  * @property string $text
@@ -38,10 +38,10 @@ class Blog extends ActiveRecord
 	 public function rules()
 	{
 		return [
-			[['label', 'title', 'image_name', 'text', 'created_at'], 'string'],
-			[['view_count', 'sort', 'status', 'is_popular'], 'integer'],
+			[['title', 'image_name', 'text', 'created_at'], 'string'],
+			[['category_id', 'view_count', 'sort', 'status', 'is_popular'], 'integer'],
 			[['file'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg, svg'],
-			[['label', 'title', 'image_name', 'text', 'created_at', 'view_count', 'sort'], 'required']			
+			[['category_id', 'title', 'image_name', 'text', 'created_at', 'view_count', 'sort'], 'required']			
 		];
 	}
 	
@@ -49,7 +49,7 @@ class Blog extends ActiveRecord
 	{
 		return [
 			'id' => 'ID',
-			'label' => 'Label',
+			'category_id' => 'Category ID',
 			'title' => 'Title',
 			'file' => 'Image',
 			'text' => 'Text',
@@ -57,40 +57,40 @@ class Blog extends ActiveRecord
 			'view_count' => 'View count',
 			'sort' => 'Sort',
 			'status' => 'Status',
-			'is_popular' => 'The article is pupular'
+			'is_popular' => 'Is pupular'
 		];
 	}
 	
 	 public function beforeSave($insert)
-   {
-			if ($this->isNewRecord)
-			{
-				
-				$maxOrderNumber = Yii::$app->db->createCommand('SELECT max(sort) as max FROM blog')->queryScalar();
-				$this->sort = $maxOrderNumber + 1;
+	 {
+		if ($this->isNewRecord)
+		{
 			
-			} else {
-				
-				$duplicate = self::find()->where(['sort' => $this->sort])->andWhere(['!=', 'id', $this->id])->one();
-				if ($duplicate) {
-					$items = self::find()->where(['>=', 'sort', $this->sort])->all();
-					foreach ($items as $item) {
-						$item->sort = $item->sort + 1;
-						$item->save(false);
-					}
+			$maxOrderNumber = Yii::$app->db->createCommand('SELECT max(sort) as max FROM blog')->queryScalar();
+			$this->sort = $maxOrderNumber + 1;
+		
+		} else {
+			
+			$duplicate = self::find()->where(['sort' => $this->sort])->andWhere(['!=', 'id', $this->id])->one();
+			if ($duplicate) {
+				$items = self::find()->where(['>=', 'sort', $this->sort])->all();
+				foreach ($items as $item) {
+					$item->sort = $item->sort + 1;
+					$item->save(false);
 				}
-				
 			}
+			
+		}
 
-			return parent::beforeSave($insert);
-    }
+		return parent::beforeSave($insert);
+	}
 
-    public function afterSave($insert, $changedAttributes)
-    {
-			if ($this->file) {
-				$this->file->saveAs(Yii::getAlias(Yii::$app->urlManagerFrontend->baseUrl.'/uploads/blog/').$this->file->name);
-			}
+	public function afterSave($insert, $changedAttributes)
+	{
+		if ($this->file) {
+			$this->file->saveAs(Yii::getAlias(Yii::$app->urlManagerFrontend->baseUrl.'/uploads/blog/').$this->file->name);
+		}
 
-			parent::afterSave($insert, $changedAttributes);
-    }
+		parent::afterSave($insert, $changedAttributes);
+	}
 }

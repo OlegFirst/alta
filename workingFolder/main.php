@@ -7,7 +7,8 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'app-backend',		
+    'id' => 'app-backend',
+		// 'homeUrl' => '/admin',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
@@ -21,7 +22,8 @@ return [
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
-        'session' => [            
+        'session' => [
+            // this is the name of the session cookie used for login on the backend
             'name' => 'advanced-backend',
         ],
         'log' => [
@@ -37,15 +39,18 @@ return [
             'errorAction' => 'site/error',
         ],
 				'request' => [
-						// Hosting				
-						// 'baseUrl' => '/admin',
+						// Hosting
+						// 'baseUrl' => '/',
+				
+						'baseUrl' => '/admin',
 				],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
 						'rules' => [
-							'site/blog' => '/blog',
-							'site/category' => '/category'
+							'admin' => 'site/admin',
+							'blog' => 'blog',
+							// '<script>' => 'site/<script>'
             ],
 				],
 				'urlManagerFrontend' => [

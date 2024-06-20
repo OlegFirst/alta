@@ -1,14 +1,84 @@
 /*
 * Time
 */
+5.10-5.20
+13.05-13.40 
+14.20-15.50
+16.14-16.35
+20.30-
 
-
+http://localhost/alta/backend/web/blog/update?id=1
 -------------------------------
-Total: 16h 55min
-
+Total: 20h 25m
 /*
 * Bugs
 */
+
+/*
+*	Hosting Layout project
+*/
+http://mir-test1.klev.net.ua/alta_metiz
+
+/* Figma */
+https://www.figma.com/file/9EMVn8AWuMPvQWX3XkV0MZ/Alta-metiz-(final-2)?type=design&node-id=681-21946&mode=design
+
+/* Hosting FTP */
+https://oleg-test1.klev.net.ua/
+
+91.239.233.100
+olegftp@klev.net.ua
+fe?4Tv~ksoN4hj
+
+/* Data base */
+https://oleg-test1.klev.net.ua/frontend/web/phpAdmin/
+
+'username' => 'grnweswb_oleg_dbuser',
+'password' => '@NPsE0w1$uiAfg',
+
+/*
+* TO DO:
+*/
+- signin -> rememberMe realize
+
+/*
+* Before fill into hoisting. Change files
+*/
+- C:\xampp\htdocs\alta\common\config\main-local.php
+
+- C:\xampp\htdocs\alta\frontend\config\main.php
+
+- C:\xampp\htdocs\alta\backend\config\main.php - ? -
+	'baseUrl' => '/'
+	
+- C:\xampp\htdocs\alta\frontend\components\Menu.php
+	private $isLocalhost = true;
+
+/*
+* DB changes
+*/
+- Table Blog->label into ->category_id
+- Table Category
+
+/*
+* Hosting Admin credentials
+*/
+login: admin
+password: password1234
+
+label - dropdown list - create db table
+
+sort - autoincrement - OK
+sort equals - OK
+data picker
+view - how many times - OK
+fix - layout
+type - news or blog
+rate - admin set in - ok
+
+/*
+* Deugging Message
+*/
+Yii::$app->session->setFlash('flashMessage', $this->getCurrentBlogArticle());
 
 /*
 * Layout files/folder are used:
@@ -53,63 +123,3 @@ Total: 16h 55min
 - file - 'supplier.php'
 - file - 'tovar.php'
 - file - 'news.php'
-
-<a href="<?= Yii::$app->menu->get('main')['url'] ?>">
-
-/*
-*	Hosting Layout project
-*/
-http://mir-test1.klev.net.ua/alta_metiz
-
-/* Figma */
-https://www.figma.com/file/9EMVn8AWuMPvQWX3XkV0MZ/Alta-metiz-(final-2)?type=design&node-id=681-21946&mode=design
-
-/* Hosting FTP */
-https://oleg-test1.klev.net.ua/
-
-91.239.233.100
-olegftp@klev.net.ua
-fe?4Tv~ksoN4hj
-
-/* Data base */
-https://oleg-test1.klev.net.ua/frontend/web/phpAdmin/
-
-'username' => 'grnweswb_oleg_dbuser',
-'password' => '@NPsE0w1$uiAfg',
-
-/*
-* TO DO:
-*/
-- signin -> rememberMe realize
-
-/*
-* Before fill into hoisting. Change files
-*/
-- C:\xampp\htdocs\alta\common\config\main-local.php
-
-- C:\xampp\htdocs\alta\frontend\config\main.php
-
-- C:\xampp\htdocs\alta\backend\config\main.php - ? -
-	'baseUrl' => '/'
-	
-- C:\xampp\htdocs\alta\frontend\components\Menu.php
-	['url' => '/', 'text' => 'Головна', 'alias' => 'main']
-
-/*
-* DB changes
-*/
-
-/*
-* Hosting Admin credentials
-*/
-login: admin
-password: password1234
-
-sort - autoincrement
-sort equals
-data picker
-view - how many times
-fix - layout
-label - dropdown list - create db table
-type - news or blog
-rate - admin set in

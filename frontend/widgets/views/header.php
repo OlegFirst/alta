@@ -1,14 +1,16 @@
 <?php
 	use yii\bootstrap5\Html;
 	use yii\bootstrap5\ActiveForm;
+	
+	include_once '../../common/utils/utils.php';
 ?>
 
 <header class="header" id="header">
     <div class="header-top" id="header-top">		
         <div class="header-top__logo">
             <a href="<?= Yii::$app->menu->get('main')['url'] ?>" class="header-top__logo-a">
-                <img src="img/logo_header.png" class="d-none d-lg-block" alt="">
-                <img src="img/logo_header-mob.png" class="d-lg-none" alt="">
+                <img src="<?= createImagePath('img/logo_header.png') ?>" class="d-none d-lg-block" alt="">
+                <img src="<?= createImagePath('img/logo_header-mob.png') ?>" class="d-lg-none" alt="">
             </a>
         </div>
 				

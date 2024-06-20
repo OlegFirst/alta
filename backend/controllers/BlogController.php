@@ -4,10 +4,13 @@ namespace backend\controllers;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use common\models\Blog;
 use yii\data\ActiveDataProvider;
 use yii\web\NotFoundHttpException;
 use yii\web\UploadedFile;
+
+use common\models\Blog;
+use common\models\formatted\BlogFormatted;
+use common\models\Category;
 
 class BlogController extends Controller
 {
@@ -42,10 +45,15 @@ class BlogController extends Controller
 	public function actionIndex()
 	{
 		$dataProvider = new ActiveDataProvider([
-			'query' => Blog::find()
+			'query' => Blog::find()->leftJoin('category', 'blog.category_id = category.id')->orderBy('sort')
 		]);
+				
+		$categoryModel = Category::find()->all();
 		
-		return $this->render('index', [ 'dataProvider' => $dataProvider ]);
+		return $this->render('index', [ 
+			'dataProvider' => $dataProvider,
+			'$categoryModel' => $categoryModel
+		]);
 	}
 
 	/*
@@ -56,6 +64,8 @@ class BlogController extends Controller
 	public function actionCreate()
 	{
 		$model = new Blog();
+		$sortMax = Blog::find()->max('sort') + 1;
+		$categoryModel = Category::find()->asArray()->all();
 		
 		if ($this->request->isPost) {
 			if ($model->load($this->request->post())) {
@@ -71,7 +81,7 @@ class BlogController extends Controller
 				$model->loadDefaultValues();
 		}
 		
-		return $this->render('create', [ 'model' => $model ]);
+		return $this->render('create', compact('model', 'sortMax', 'categoryModel'));
 	}
 	
 	 /*
@@ -84,6 +94,8 @@ class BlogController extends Controller
 	public function actionUpdate($id)
 	{
 		$model = $this->findModel($id);
+		
+		$categoryModel = Category::find()->asArray()->all();
 
 		if ($this->request->isPost && $model->load($this->request->post())) {
 			$uploadedFile = UploadedFile::getInstance($model, 'file');
@@ -98,9 +110,7 @@ class BlogController extends Controller
 			}
 		}
 
-		return $this->render('update', [
-			'model' => $model,
-		]);
+		return $this->render('update', compact('model', 'categoryModel'));
 	}
 	
 	/*
