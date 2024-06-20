@@ -39,10 +39,13 @@
 
         <div class="blog__filter-wrap">
             <div class="blog__filter-tags">
-                <span class="blog__filter-tag active">Всі</span>
-                <a href="#" class="blog__filter-tag">Саморізи</a>
-                <a href="#" class="blog__filter-tag">Саморізи</a>
-                <a href="#" class="blog__filter-tag">Саморізи</a>
+								<span class="blog__filter-tag active">Всі</span>
+						
+                <?php 
+									foreach ($categoryModel as $item):
+										echo "<a href='#' class='blog__filter-tag'>".$item['name']."</a>";
+									endforeach;
+								?>
             </div>
 						
             <select name="" id="" class="blog__filter-select">

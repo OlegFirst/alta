@@ -10,6 +10,7 @@
 	
 	use common\models\Blog;
 	use common\models\formatted\BlogFormatted;
+	use common\models\Category;
 	use frontend\models\BlogForm;
 	
 	class BlogController extends Controller
@@ -68,8 +69,9 @@
 				'defaultPageSize' => 4,
 				'totalCount' => count(BlogFormatted::getModel())
 			]);
-			$model = BlogFormatted::getPaginatedModel($pagination);
 			
+			$model = BlogFormatted::getPaginatedModel($pagination);			
+			$categoryModel = Category::find()->asArray()->all();
 			$formModel = new BlogForm();
 			
 			if ($formModel->load(Yii::$app->request->post())) {
@@ -82,7 +84,7 @@
 				}
 			}
 			
-			return $this->render('blog', compact('model', 'formModel', 'pagination'));
+			return $this->render('blog', compact('model', 'categoryModel', 'formModel', 'pagination'));
 		}
 		
 		public function actionBlogArticle()

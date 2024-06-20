@@ -5,7 +5,7 @@
 13.05-13.40 
 14.20-15.50
 16.14-16.35
-20.30-
+20.30-22.00
 
 http://localhost/alta/backend/web/blog/update?id=1
 -------------------------------
@@ -69,7 +69,7 @@ label - dropdown list - create db table
 
 sort - autoincrement - OK
 sort equals - OK
-data picker
+data picker - OK
 view - how many times - OK
 fix - layout
 type - news or blog

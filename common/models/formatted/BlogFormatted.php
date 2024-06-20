@@ -12,7 +12,7 @@ use common\models\Blog;
  * @property string $created_at
  * @property integer $view_count
  * @property integer $sort
- * @property integer $status
+ * @property integer $status = 1
  * @property integer $is_popular 
  */
 
@@ -34,11 +34,23 @@ class BlogFormatted extends Blog
 			'view_count' => 'View count',
 			'sort' => 'Sort',
 			'status' => 'Status',
-			'is_popular' => 'TIs pupular'
+			'is_popular' => 'Is pupular'
 		];
 	}
 	
-	public static function getModelQuery() {
+	// public static function getModelQuery() {
+		// $query = new \yii\db\Query();
+		
+		// return $query
+			// ->select(
+				// 'blog.id, blog.title, blog.image_name, blog.text, blog.created_at, blog.view_count, blog.sort, blog.status, blog.is_popular,
+				// category.name as category_name'
+			// )
+			// ->from('blog')
+			// ->leftJoin('category', 'blog.category_id = category.id');
+	// }
+	
+	public static function getModel() {
 		$query = new \yii\db\Query();
 		
 		return $query
@@ -47,11 +59,7 @@ class BlogFormatted extends Blog
 				category.name as category_name'
 			)
 			->from('blog')
-			->leftJoin('category', 'blog.category_id = category.id');
-	}
-	
-	public static function getModel() {
-		return BlogFormatted::getModelQuery()
+			->leftJoin('category', 'blog.category_id = category.id')
 			->where(['status' => 1])
 			->orderBy('sort')
 			->all();

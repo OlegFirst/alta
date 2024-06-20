@@ -2,6 +2,7 @@
 	use yii\bootstrap5\Html;
 	use yii\bootstrap5\ActiveForm;
 	use kartik\editors\Summernote;
+	use kartik\date\DatePicker;
 	
 	/*
 	*	@models:	Blog, Category
@@ -44,9 +45,14 @@
 			'useKrajeePresets' => true,
 		]);
 		
-		echo $form->field($model, 'created_at')->textInput();
+		echo $form->field($model, 'created_at')->widget(DatePicker::classname(), [
+			'options' => ['placeholder' => 'Date'],
+			'pluginOptions' => [
+				'autoclose' => true
+			]
+		]);
 		
-		echo $form->field($model, 'view_count')->textInput();
+		echo $form->field($model, 'view_count')->textInput(['value' => $model->view_count ?? 0]);
 		
 		echo $form->field($model, 'sort')->textInput(['value' => $model->sort ?? $sortMax]);
 		
