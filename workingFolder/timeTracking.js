@@ -1,15 +1,11 @@
 /*
 * Time
 */
-5.10-5.20
-13.05-13.40 
-14.20-15.50
-16.14-16.35
-20.30-22.00
+11.30-
 
 http://localhost/alta/backend/web/blog/update?id=1
 -------------------------------
-Total: 20h 25m
+Total: 24h 25m 
 /*
 * Bugs
 */
@@ -32,8 +28,8 @@ fe?4Tv~ksoN4hj
 /* Data base */
 https://oleg-test1.klev.net.ua/frontend/web/phpAdmin/
 
-'username' => 'grnweswb_oleg_dbuser',
-'password' => '@NPsE0w1$uiAfg',
+'username' => grnweswb_oleg_dbuser
+'password' => @NPsE0w1$uiAfg
 
 /*
 * TO DO:
@@ -45,35 +41,25 @@ https://oleg-test1.klev.net.ua/frontend/web/phpAdmin/
 */
 - C:\xampp\htdocs\alta\common\config\main-local.php
 
+- C:\xampp\htdocs\alta\backend\config\main.php
+	'baseUrl' => '/'
+
 - C:\xampp\htdocs\alta\frontend\config\main.php
 
-- C:\xampp\htdocs\alta\backend\config\main.php - ? -
-	'baseUrl' => '/'
-	
 - C:\xampp\htdocs\alta\frontend\components\Menu.php
 	private $isLocalhost = true;
 
 /*
 * DB changes
 */
-- Table Blog->label into ->category_id
-- Table Category
+- Table Blog->label into ->category_id - OK
+- Table Category - OK
 
 /*
 * Hosting Admin credentials
 */
 login: admin
 password: password1234
-
-label - dropdown list - create db table
-
-sort - autoincrement - OK
-sort equals - OK
-data picker - OK
-view - how many times - OK
-fix - layout
-type - news or blog
-rate - admin set in - ok
 
 /*
 * Deugging Message

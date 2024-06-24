@@ -15,6 +15,8 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
+						// Hosting				
+						// 'baseUrl' => '/'
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -36,15 +38,15 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-				'request' => [
-						// Hosting				
-						// 'baseUrl' => '/admin',
-				],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
 						'rules' => [
 							'site/blog' => '/blog',
+							
+							// Hosting
+							// //'site/category' => '/category' - comment this one
+							
 							'site/category' => '/category'
             ],
 				],

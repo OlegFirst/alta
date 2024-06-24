@@ -1,0 +1,9 @@
+RewriteEngine on
+ 
+# If file or folder than open it
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+ 
+# Otherwise redirect to index.php
+# RewriteRule . index.php
+RewriteRule ^.*$ web/index.php

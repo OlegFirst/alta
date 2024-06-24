@@ -1,0 +1,2 @@
+[30-Apr-2024 16:34:26 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/backend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/backend/web/index.php on line 6
+[30-Apr-2024 16:34:26 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/backend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/backend/web/index.php on line 6

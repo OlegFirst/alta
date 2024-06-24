@@ -1,0 +1,178 @@
+[30-Apr-2024 17:32:40 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:32:40 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:36:15 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:36:15 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:36:23 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:36:23 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:36:57 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:36:57 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:37:22 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:37:22 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:37:23 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:37:23 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:46:05 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:46:05 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:46:21 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:46:21 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:46:27 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:46:27 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:51:30 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:51:30 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:51:54 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:51:54 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:52:05 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:52:05 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:52:35 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:52:35 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:52:36 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:52:36 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:53:01 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:53:01 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:53:01 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:53:01 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:53:02 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:53:02 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:53:27 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:53:27 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:47 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:47 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:49 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:49 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:50 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:50 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:51 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:51 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:53 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:55:53 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:06 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:06 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:07 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:07 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:25 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:25 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:26 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:26 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:26 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:26 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:48 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:48 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:49 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:49 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:50 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:56:50 Europe/Helsinki] PHP Fatal error:  require(): Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:57:31 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:57:31 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:57:35 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:57:35 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:57:36 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:57:36 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:24 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:24 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:28 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:28 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:29 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:29 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:29 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:29 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:30 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 17:59:30 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 18:02:23 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 18:02:23 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 18:02:41 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 18:02:41 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 18:03:43 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 18:03:43 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 18:32:30 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 18:32:30 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:02:29 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:02:29 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:29:45 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:29:45 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:29:47 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:29:47 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:29:52 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:29:52 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:32:33 Europe/Helsinki] PHP Warning:  require(/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[30-Apr-2024 19:32:33 Europe/Helsinki] PHP Fatal error:  Uncaught Error: Failed opening required '/home/grnweswb/oleg-test1.klev.net.ua/frontend/web/../../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/grnweswb/oleg-test1.klev.net.ua/frontend/web/index.php on line 6
+[01-May-2024 11:33:00 Europe/Helsinki] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.30. in /home/grnweswb/oleg-test1.klev.net.ua/vendor/composer/platform_check.php on line 24
