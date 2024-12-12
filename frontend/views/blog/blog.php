@@ -1,5 +1,7 @@
 <?php
-	use yii\bootstrap5\Html;	
+	use yii\bootstrap5\Html;
+	use yii\bootstrap5\ActiveForm;
+	use yii\helpers\Url;
 	use yii\widgets\LinkPager;
 	use frontend\widgets\BlockNews;
 
@@ -40,10 +42,56 @@
         <div class="blog__filter-wrap">
             <div class="blog__filter-tags">
 								<span class="blog__filter-tag active">Всі</span>
+								
+								<?php
+									foreach ($categoryModel as $item):
+										$form = ActiveForm::begin([
+											'action' => Url::to(['/test/tes-1'])
+										]);
+								?>
+											<button class='blog__filter-tag' type='submit'>
+												<a href='#' class='blog__filter-tag'><?= $item['name'] ?></a>
+												
+												<?= $form->field($formModel, 'id')->hiddenInput(['value' => $item['id']])->label(false); ?>
+											</button>
+								<?php
+										ActiveForm::end();
+									endforeach;
+								?>
+            </div>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<div class="blog__filter-tags">
+								<span class="blog__filter-tag active">Всі</span>
 						
                 <?php 
 									foreach ($categoryModel as $item):
-										echo "<a href='#' class='blog__filter-tag'>".$item['name']."</a>";
+										$target = '/blog/category-filter?id='.$item['id'];
+								?>
+									
+										<a href="<?= Url::to([$target]) ?>" class='blog__filter-tag'><?= $item['name'] ?></a>
+								<?php
 									endforeach;
 								?>
             </div>

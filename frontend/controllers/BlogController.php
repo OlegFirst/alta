@@ -74,6 +74,40 @@
 			$categoryModel = Category::find()->asArray()->all();
 			$formModel = new BlogForm();
 			
+			print_r($model);
+			
+			return;
+			
+			if ($formModel->load(Yii::$app->request->post())) {
+				$blogId = $formModel->getBlogId();
+				
+				// Some blog is selected
+				if ($blogId) {
+					$this->setCurrentBlogArticle($blogId, false);
+					return $this->redirect(['blog-article', 'id' => $blogId]);
+				}
+			}
+			
+			return $this->render('blog', compact('model', 'categoryModel', 'formModel', 'pagination'));
+		}
+		
+		public function actionCategoryFilter($id) 
+		{
+			$pagination = new Pagination([
+				'defaultPageSize' => 4,
+				'totalCount' => count(BlogFormatted::getModel())
+			]);
+			
+			$model = BlogFormatted::getPaginatedModel($pagination);
+
+			print_r($model);
+			
+			return;
+
+			
+			$categoryModel = Category::find()->asArray()->all();
+			$formModel = new BlogForm();
+			
 			if ($formModel->load(Yii::$app->request->post())) {
 				$blogId = $formModel->getBlogId();
 				

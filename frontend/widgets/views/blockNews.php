@@ -1,9 +1,10 @@
 <?php 
 	use yii\bootstrap5\ActiveForm;
 	
-	include_once '../../common/utils/utils.php';
+	include_once '../../common/utils/utils.php';	
 	
 	$form = ActiveForm::begin(
+		// Are layout atributes present?
 		$activeFormAttributes ?? []
 	); 
 ?>
